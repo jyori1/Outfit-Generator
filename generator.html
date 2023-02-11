@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+	<script src="jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	  <link href="//db.onlinewebfonts.com/c/7839d168d452e07437d16330a71da7d8?family=AdLib" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		<header class="header">
+		<h1 class="logo"><a href="generator.html">Outfit Generator</a></h1>
+      <ul class="main-nav">
+          <li><a href="generator.html"><span class="underline">generate your style</span></a></li>
+          <li><a href="brands.html"><span class="underline">brands we love</span></a></li>
+          <li><a href="index.html"><span class="underline">about us</span></a></li>
+      </ul>
+	</header> 
+	<h1 class="midHeader"> Generate Your Style </h1>
+
+	<div class = "styleDropDown">
+    <select id="style" class="styleOption">
+      <option value = "vintage">Vintage</option>
+      <option value = "academia">Academia</option>
+      <option value = "cottage">Cottage Core</option>
+    </select>
+	</div>
+  <div class= "generateLook">
+	<button onclick="gen()" class="button generateButton button--janus"><span>Generate!</span></button>
+  </div>
+	<div id="everything">
+  <div id="vintage" class= "vintage" class="clothes">
+    <br> <img src="https://cdn.shopify.com/s/files/1/0762/7039/products/soft-retro-body-black-tops-alohas-218579_1080x.jpg?v=1621265392">
+    <br> <img src="https://cdn.shopify.com/s/files/1/0762/7039/products/high-tied-skirt-kaleidoscope-blue-skirts-alohas-679064_720x.jpg?v=1622527083">
+    <br> <img src="https://cdn.shopify.com/s/files/1/0762/7039/products/busy-black-loafers-alohas-914789_360x.jpg?v=1626313065">
+    <br> <img src="https://images.squarespace-cdn.com/content/v1/5442b6cce4b0cf00d1a3bef2/1612564261546-USCYPXNWT0TSQ3UF1TTI/sustainable-womens-watches-triwa?format=750w"> 
+    <br><img src="https://media.thereformation.com/image/upload/f_auto,q_auto:eco/c_scale,w_auto:breakpoints_100_1668_9_20:2110/v1/prod/product_images/gavin-dress/emerald/5b524d628858db2e99c0387b/original.jpg"> 
+    <br< <img src= 	"https://cdn.shopify.com/s/files/1/0265/1625/8864/products/SpellXOutlandDenim-womens-skirt-vintage-blue-front_1000x.jpg?v=1620099409"><br>
+  </div>
+  <div id="academia" class= "academia" class="clothes">
+    <img id="" src="https://cdn.shopify.com/s/files/1/0368/0036/4683/products/Cropped_Finger_Hole_Sweater_003-01370-0005_6821_800x.jpg?v=1608633047">
+    <br> <img src="https://cdn.shopify.com/s/files/1/0368/0036/4683/products/coated_denim_pensil_skirt_001-00893-0006_800x.jpg?v=1619298491">
+    <br> <img src="https://www.noah-shop.com/media/catalog/product/n/o/noah-_vegan_shoes_enrico-lace-up.jpg">
+    <br> <img src="https://media.thereformation.com/image/upload/f_auto,q_auto/c_scale,w_auto:breakpoints_100_2560_9_20:520/v1/prod/product_images/holland-trench/brown/5f4979deafdc7900171ada0f/original.jpg">
+    <br><img src="https://cdn.shopify.com/s/files/1/0686/4783/products/Burgundy-organic-cotton-jumper-3_1800x1800.jpg?v=1575286470">
+    <br> <img src="https://cdn.shopify.com/s/files/1/0023/7174/7909/products/ARIELLE_TROUSER_BACK_800x.jpg?v=1536634397">
+    <br> <img src="https://www.nae-vegan.com/api/api.php/getImage/1500/0/0/aW1hZ2VzX3Byb2RzX3N0YXRpYy9TS1VfR1JPVVAvR2FyaW5fQnJvd24uanBn.jpg">
+    <br>
+  </div>
+  <div id="cottage" class= "cottageCore" class="clothes">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThI6sdDY1yjwsVcARkxyMEhH0hajLE4ZHU9BMXqYKCbk5c72zQhAcpKAzUlrHdThRJNYxj7yD0YQ&usqp=CAc">
+    <br> <img src= "https://cdn.shopify.com/s/files/1/0269/4076/8349/products/A154B-1207_90S_PINCH_WAIST_BLACK_TEA_41194_web_600x.jpg?v=1599162606">
+    <br> <img src="https://pyxis.nymag.com/v1/imgs/e71/da8/bf12111105439a9ecb8f9d97f653566fcb-black-boota.w600.jpg">
+    <br> <img src="https://cdn.shopify.com/s/files/1/1782/4093/products/jQl7ww11G0_900x.jpg?v=1569320969">
+    <br><img src="https://media.everlane.com/image/upload/c_fill,dpr_2.0,f_auto,g_face:center,q_auto,w_auto:100:1200/v1/i/67df35ab_3330.jpg">
+    <br> <img src="https://cdn.shopify.com/s/files/1/0368/0036/4683/products/satin_mini_skirt_022-01315-0017_0168_500x.jpg?v=1615222684">
+    <br> <img src="https://content.backcountry.com/images/items/large/BRK/BRK000A/HABOILLEA.jpg">
+    <br> <img src="https://i.etsystatic.com/24621376/r/il/af9840/3255743841/il_794xN.3255743841_21c3.jpg"><br>
+  </div>
+	</div>
+  </body>
+</html>
